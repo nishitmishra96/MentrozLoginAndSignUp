@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3095271224E36260001C48A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3095270224E36260001C48A /* AppDelegate.swift */; };
+		A3095273224E36260001C48A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3095272224E36260001C48A /* ViewController.swift */; };
+		A3095276224E36260001C48A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3095274224E36260001C48A /* Main.storyboard */; };
+		A3095278224E36280001C48A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3095277224E36280001C48A /* Assets.xcassets */; };
+		A309527B224E36280001C48A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3095279224E36280001C48A /* LaunchScreen.storyboard */; };
+		A3095283224E40C20001C48A /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3095282224E40C20001C48A /* ButtonDesign.swift */; };
+		A3291EA3225204F3004B8DEA /* DataForJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA2225204F3004B8DEA /* DataForJSON.swift */; };
+		A3291EA522520701004B8DEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA422520701004B8DEA /* User.swift */; };
+		A3291EA722521150004B8DEA /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA622521150004B8DEA /* PhoneNumber.swift */; };
+		A3291EA922521193004B8DEA /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA822521193004B8DEA /* DeviceInfo.swift */; };
+		A3291EAB225226D7004B8DEA /* APIHitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EAA225226D7004B8DEA /* APIHitManager.swift */; };
+		A3C6BDD7224F458B0018007A /* APIRequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequestsManager.swift */; };
+		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
+		FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentorzLoginSignUpFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B4B3800E41AF89CC77D446 /* Pods-MentorzLoginSignUpFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.release.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.release.xcconfig"; sourceTree = "<group>"; };
+		A309526D224E36260001C48A /* MentorzLoginSignUpFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorzLoginSignUpFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3095270224E36260001C48A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3095272224E36260001C48A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3095275224E36260001C48A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3095277224E36280001C48A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A309527A224E36280001C48A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A309527C224E36280001C48A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3095282224E40C20001C48A /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
+		A3291EA2225204F3004B8DEA /* DataForJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForJSON.swift; sourceTree = "<group>"; };
+		A3291EA422520701004B8DEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3291EA622521150004B8DEA /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		A3291EA822521193004B8DEA /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		A3291EAA225226D7004B8DEA /* APIHitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHitManager.swift; sourceTree = "<group>"; };
+		A3C6BDD6224F458B0018007A /* APIRequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestsManager.swift; sourceTree = "<group>"; };
+		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A309526A224E36260001C48A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3095264224E36260001C48A = {
+			isa = PBXGroup;
+			children = (
+				A309526F224E36260001C48A /* MentorzLoginSignUpFlow */,
+				A309526E224E36260001C48A /* Products */,
+				EA5F20DB191A2D397683518A /* Pods */,
+				F9837537EF31E3173F7CEB42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A309526E224E36260001C48A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A309526D224E36260001C48A /* MentorzLoginSignUpFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A309526F224E36260001C48A /* MentorzLoginSignUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A3095270224E36260001C48A /* AppDelegate.swift */,
+				A3095272224E36260001C48A /* ViewController.swift */,
+				A3095274224E36260001C48A /* Main.storyboard */,
+				A3095277224E36280001C48A /* Assets.xcassets */,
+				A3095279224E36280001C48A /* LaunchScreen.storyboard */,
+				A309527C224E36280001C48A /* Info.plist */,
+				A3095282224E40C20001C48A /* ButtonDesign.swift */,
+				A3C6BDD6224F458B0018007A /* APIRequestsManager.swift */,
+				A3C6BE13224FCFD90018007A /* LoginScreen.swift */,
+				A3291EA2225204F3004B8DEA /* DataForJSON.swift */,
+				A3291EA422520701004B8DEA /* User.swift */,
+				A3291EA622521150004B8DEA /* PhoneNumber.swift */,
+				A3291EA822521193004B8DEA /* DeviceInfo.swift */,
+				A3291EAA225226D7004B8DEA /* APIHitManager.swift */,
+			);
+			path = MentorzLoginSignUpFlow;
+			sourceTree = "<group>";
+		};
+		EA5F20DB191A2D397683518A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */,
+				67B4B3800E41AF89CC77D446 /* Pods-MentorzLoginSignUpFlow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9837537EF31E3173F7CEB42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A309526C224E36260001C48A /* MentorzLoginSignUpFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A309527F224E36280001C48A /* Build configuration list for PBXNativeTarget "MentorzLoginSignUpFlow" */;
+			buildPhases = (
+				B7A0E75EA2903C3DD3122BA8 /* [CP] Check Pods Manifest.lock */,
+				A3095269224E36260001C48A /* Sources */,
+				A309526A224E36260001C48A /* Frameworks */,
+				A309526B224E36260001C48A /* Resources */,
+				E6E1911ED80BADCB3C3EBF0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MentorzLoginSignUpFlow;
+			productName = MentorzLoginSignUpFlow;
+			productReference = A309526D224E36260001C48A /* MentorzLoginSignUpFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3095265224E36260001C48A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = craterzone;
+				TargetAttributes = {
+					A309526C224E36260001C48A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A3095268224E36260001C48A /* Build configuration list for PBXProject "MentorzLoginSignUpFlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3095264224E36260001C48A;
+			productRefGroup = A309526E224E36260001C48A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A309526C224E36260001C48A /* MentorzLoginSignUpFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A309526B224E36260001C48A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A309527B224E36280001C48A /* LaunchScreen.storyboard in Resources */,
+				A3095278224E36280001C48A /* Assets.xcassets in Resources */,
+				A3095276224E36260001C48A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7A0E75EA2903C3DD3122BA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MentorzLoginSignUpFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E1911ED80BADCB3C3EBF0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3095269224E36260001C48A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3291EA3225204F3004B8DEA /* DataForJSON.swift in Sources */,
+				A3C6BDD7224F458B0018007A /* APIRequestsManager.swift in Sources */,
+				A3095283224E40C20001C48A /* ButtonDesign.swift in Sources */,
+				A3095273224E36260001C48A /* ViewController.swift in Sources */,
+				A3291EAB225226D7004B8DEA /* APIHitManager.swift in Sources */,
+				A3095271224E36260001C48A /* AppDelegate.swift in Sources */,
+				A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */,
+				A3291EA522520701004B8DEA /* User.swift in Sources */,
+				A3291EA922521193004B8DEA /* DeviceInfo.swift in Sources */,
+				A3291EA722521150004B8DEA /* PhoneNumber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3095274224E36260001C48A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3095275224E36260001C48A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3095279224E36280001C48A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A309527A224E36280001C48A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A309527D224E36280001C48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A309527E224E36280001C48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3095280224E36280001C48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MentorzLoginSignUpFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.MentorzLoginSignUpFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3095281224E36280001C48A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B4B3800E41AF89CC77D446 /* Pods-MentorzLoginSignUpFlow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MentorzLoginSignUpFlow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.craterzone.MentorzLoginSignUpFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3095268224E36260001C48A /* Build configuration list for PBXProject "MentorzLoginSignUpFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A309527D224E36280001C48A /* Debug */,
+				A309527E224E36280001C48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A309527F224E36280001C48A /* Build configuration list for PBXNativeTarget "MentorzLoginSignUpFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3095280224E36280001C48A /* Debug */,
+				A3095281224E36280001C48A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3095265224E36260001C48A /* Project object */;
+}
