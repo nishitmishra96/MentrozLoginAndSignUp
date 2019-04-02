@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Moya
+import ObjectMapper
 
-class User{
+class User : NSObject,Mappable{
     
     var hasInterests : Bool?
     var hasValues : Bool?
@@ -19,6 +21,14 @@ class User{
     var userId : Int?
     var userProfile : UserProfile?
     
+    override public init() {
+        super.init()
+    }
+    
+    required public init?(map: Map) {
+        
+    }
+    
     init(userData : ResponseHandlerForLogin){
         self.hasInterests = userData.hasInterests
         self.hasValues = userData.hasValues
@@ -28,6 +38,18 @@ class User{
         self.phoneNumber = userData.phoneNumber
         self.userId = userData.userId
         self.userProfile = userData.userProfile
+    }
+    
+    func mapping(map: Map)
+    {
+        hasInterests <- map["has_interests"]
+        hasValues <- map["has_values"]
+        isAccountDeactivated <- map["is_account_deactivated"]
+        isNumberVerified <- map["is_number_verified"]
+        name <- map["name"]
+        phoneNumber <- map["phone_number"]
+        userId <- map["user_id"]
+        userProfile <- map["user_profile"]
     }
     
     

@@ -13,9 +13,32 @@ class UserManager: NSObject{
     static var shared = UserManager()
     var user : User?
     
-    func LoginWithPhoneNumber(userData: UserCredentials,handler: ((Int),(User))){
-        
+    func LoginWithPhoneNumber(userData: UserCredentials,handler: @escaping ((Int,User?)->(Void))){
+        if userData.social_id == nil{
+        LoginApiHitManager.init().RequestForPhoneNumberLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
+            if let response = responseFromApiHitManager{
+                let user = User(userData: response)
+                self.user = user
+                handler(statusCode,user)
+            }
+            else{
+                handler(statusCode,nil)
+            }
+        }
     }
+        else{
+            LoginApiHitManager.init().RequestForSocialLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
+                if let response = responseFromApiHitManager{
+                    let user = User(userData: response)
+                    self.user = user
+                    handler(statusCode,user)
+                }
+                else{
+                    handler(statusCode,nil)
+                }
+            }
+
+        }
     
-    
+    }
 }
