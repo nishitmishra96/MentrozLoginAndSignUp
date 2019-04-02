@@ -19,8 +19,10 @@ extension LoginAndSignUpApiCollection: TargetType{
             return "/mentorz/api/v3/user/login"
         case .LoginThroughSocialAccount(_):
             return "/mentorz/api/v3/user/sociallogin"
-        case .RegisterThroughPhoneNumber(_),.RegisterThroughSocialAccount(_):
+        case .RegisterThroughPhoneNumber(_):
             return "/mentorz/api/v3/user"
+        case .RegisterThroughSocialAccount(_):
+            return "/mentorz/api/v3/user/social"
         }
     }
     
@@ -50,7 +52,10 @@ extension LoginAndSignUpApiCollection: TargetType{
     }
     
     var headers: [String : String]? {
-        return ["Accept":"application/json","Content-Type":"application/json","User-Agent":"ew"]
+        switch self{
+    case .LoginThroughPhoneNumber(_),.LoginThroughSocialAccount(_),.RegisterThroughPhoneNumber(_),.RegisterThroughSocialAccount(_):
+        return ["Accept":"application/json","Content-Type":"application/json","User-Agent":"hhhh"]
+        }
     }
     
     

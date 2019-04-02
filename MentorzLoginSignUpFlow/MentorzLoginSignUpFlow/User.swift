@@ -16,14 +16,19 @@ import ObjectMapper
 class User : NSObject, Mappable{
     
     var basicInfo : String?
-    var birthDate : String?
+    var birthDate : Int?
+    var chargePrice : Int?
+    var followers : Int?
+    var following : Int?
+    var hresId : String?
+    var lresId : String?
+    var mentees : Int?
+    var mentors : Int?
     var name : String?
+    var noofpost : Int?
+    var requests : Int?
     var videoBioHres : String?
-    var lres_id: String?
-    var hres_id: String?
-    var basic_info: String?
-    var video_bio_lres: String?
-    var video_bio_hres: String?
+    var videoBioLres : String?
     
     
     override public init() {
@@ -38,13 +43,18 @@ class User : NSObject, Mappable{
     {
         basicInfo <- map["basic_info"]
         birthDate <- map["birth_date"]
+        chargePrice <- map["charge_price"]
+        followers <- map["followers"]
+        following <- map["following"]
+        hresId <- map["hres_id"]
+        lresId <- map["lres_id"]
+        mentees <- map["mentees"]
+        mentors <- map["mentors"]
         name <- map["name"]
+        noofpost <- map["noofpost"]
+        requests <- map["requests"]
         videoBioHres <- map["video_bio_hres"]
-        lres_id <- map["lres_id"]
-        hres_id <- map["hres_id"]
-        basic_info <- map["basic_info"]
-        video_bio_lres <- map["video_bio_lres"]
-        video_bio_hres <- map["video_bio_hres"]
+        videoBioLres <- map["video_bio_lres"]
     }
   
 }

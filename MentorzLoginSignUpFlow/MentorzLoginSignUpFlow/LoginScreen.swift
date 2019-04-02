@@ -14,7 +14,9 @@ class LoginScreen: UIViewController{
         data.email = ""
         
         var loginAPI = APIHitManager()
-        loginAPI.RequestForPhoneNumberLogin(dataObject: data, handler: { (statuscode) -> (Void) in
+        loginAPI.RequestForPhoneNumberLogin(dataObject: data, handler: { (statusCode) -> (Void) in
+        })
+        loginAPI.RequestForSocialLogin(dataObject: data, handler: { (statusCode) -> (Void) in
         })
     }
 }
