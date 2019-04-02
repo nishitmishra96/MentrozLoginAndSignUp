@@ -199,6 +199,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSg-pb-KfW">
                                 <rect key="frame" x="16" y="344.5" width="343" height="30"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="OTP:" destination="jli-na-HYp" eventType="touchUpInside" id="Vlh-Xl-dGr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-ow-4zA">
                                 <rect key="frame" x="80" y="382" width="130" height="23"/>

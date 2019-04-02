@@ -13,7 +13,7 @@ class PhoneNumberVerification {
     
     private var verificationID = ""
 
-    func phoneNumberVerification(phoneNumber : String)
+    func phoneNumberVerifier(phoneNumber : String)
     {
     PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
     if let error = error {
@@ -22,10 +22,11 @@ class PhoneNumberVerification {
     }
     // Sign in using the verificationID and the code sent to the user
     // .
+        UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
         self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
     }
     }
-    func OTPMatching(verificationCode:String){
+    func OTPMatching(verificationCode:String)-> Bool{
         let credential = PhoneAuthProvider.provider().credential(
             withVerificationID: self.verificationID,
             verificationCode: verificationCode)
@@ -34,12 +35,14 @@ class PhoneNumberVerification {
                 // ...
                 return
             }
-            else
+            else{
             // User is signed in
             // ...
+                print("HEY YOU'RE SIGNED IN")
         }
     }
+        return true
     
 }
-
+}
 

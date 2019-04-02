@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>727358980462-lpgja9fhc1184pltdmo5eifk20ppkcnc.apps.googleusercontent.com</string>
+	<string>727358980462-3ssgepmlmrdsfrtg84p58dqg62u17o9q.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.727358980462-lpgja9fhc1184pltdmo5eifk20ppkcnc</string>
+	<string>com.googleusercontent.apps.727358980462-3ssgepmlmrdsfrtg84p58dqg62u17o9q</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDlcMI4kcaLnBXVZyK60p0GuRkhF50l6jU</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,23 +13,23 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.craterzone.MentorzLoginSignUpFlow</string>
+	<string>com.smartwalkie.voiceping</string>
 	<key>PROJECT_ID</key>
 	<string>mentorzloginsignupflow</string>
 	<key>STORAGE_BUCKET</key>
 	<string>mentorzloginsignupflow.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:727358980462:ios:e15871e1adaacb65</string>
+	<string>1:727358980462:ios:52ede0ae1e694b2b</string>
 	<key>DATABASE_URL</key>
 	<string>https://mentorzloginsignupflow.firebaseio.com</string>
 </dict>

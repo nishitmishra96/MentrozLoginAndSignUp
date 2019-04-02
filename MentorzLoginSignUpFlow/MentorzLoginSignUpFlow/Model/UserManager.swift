@@ -37,7 +37,6 @@ class UserManager: NSObject{
                     handler(statusCode,nil)
                 }
             }
-
         }
     
     }
