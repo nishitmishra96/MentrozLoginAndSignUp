@@ -6,12 +6,12 @@ class LoginScreen: UIViewController{
     @IBOutlet weak var loginButton: UIButton!
     
     @IBAction func OTP(_ sender: Any) {
-        var number = PhoneNumberVerification()
+        var number = FirebaseManager()
         number.phoneNumberVerifier(phoneNumber: "+918750221516")
     }
     
     override func viewDidLoad() {
-//        ButtonDesign.buttonStyle(button: loginButton)
+        ButtonDesign.buttonStyle(button: loginButton)
 //        let data = UserCredentials()
 //        data.phoneNumber = PhoneNumber(cc: "91",isoAlpha2Cc: "in",number: "9501975529")
 //        data.password = "qwerty"

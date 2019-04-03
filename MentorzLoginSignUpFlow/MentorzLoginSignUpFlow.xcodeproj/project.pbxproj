@@ -16,7 +16,7 @@
 		A30E0F472252530F00BD8440 /* ResponseHandlerForLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F462252530F00BD8440 /* ResponseHandlerForLogin.swift */; };
 		A30E0F4E2253356300BD8440 /* UserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F4D2253356300BD8440 /* UserRegistration.swift */; };
 		A30E0F522253531300BD8440 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F512253531300BD8440 /* User.swift */; };
-		A30E0F542253539E00BD8440 /* PhoneNumberVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F532253539E00BD8440 /* PhoneNumberVerification.swift */; };
+		A30E0F542253539E00BD8440 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F532253539E00BD8440 /* FirebaseManager.swift */; };
 		A30E0F5C22536A0400BD8440 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E0F5B22536A0400BD8440 /* UserManager.swift */; };
 		A30E0F642253A0E100BD8440 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A30E0F632253A0E100BD8440 /* GoogleService-Info.plist */; };
 		A3291EA3225204F3004B8DEA /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA2225204F3004B8DEA /* UserCredentials.swift */; };
@@ -24,6 +24,7 @@
 		A3291EA722521150004B8DEA /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA622521150004B8DEA /* PhoneNumber.swift */; };
 		A3291EA922521193004B8DEA /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EA822521193004B8DEA /* DeviceInfo.swift */; };
 		A3291EAB225226D7004B8DEA /* LoginApiHitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3291EAA225226D7004B8DEA /* LoginApiHitManager.swift */; };
+		A33F0ACF22548174006ABEAE /* SignUpOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F0ACE22548174006ABEAE /* SignUpOptionsViewController.swift */; };
 		A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequests.swift */; };
 		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
 		FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */; };
@@ -43,7 +44,7 @@
 		A30E0F462252530F00BD8440 /* ResponseHandlerForLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlerForLogin.swift; sourceTree = "<group>"; };
 		A30E0F4D2253356300BD8440 /* UserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistration.swift; sourceTree = "<group>"; };
 		A30E0F512253531300BD8440 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A30E0F532253539E00BD8440 /* PhoneNumberVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerification.swift; sourceTree = "<group>"; };
+		A30E0F532253539E00BD8440 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A30E0F5B22536A0400BD8440 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A30E0F60225392F500BD8440 /* MentorzLoginSignUpFlow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MentorzLoginSignUpFlow.entitlements; sourceTree = "<group>"; };
 		A30E0F632253A0E100BD8440 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		A3291EA622521150004B8DEA /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
 		A3291EA822521193004B8DEA /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		A3291EAA225226D7004B8DEA /* LoginApiHitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApiHitManager.swift; sourceTree = "<group>"; };
+		A33F0ACE22548174006ABEAE /* SignUpOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpOptionsViewController.swift; sourceTree = "<group>"; };
 		A3C6BDD6224F458B0018007A /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A30E0F4D2253356300BD8440 /* UserRegistration.swift */,
-				A30E0F532253539E00BD8440 /* PhoneNumberVerification.swift */,
+				A30E0F532253539E00BD8440 /* FirebaseManager.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -133,6 +135,7 @@
 				A3095274224E36260001C48A /* Main.storyboard */,
 				A3095272224E36260001C48A /* ViewController.swift */,
 				A3095282224E40C20001C48A /* ButtonDesign.swift */,
+				A33F0ACE22548174006ABEAE /* SignUpOptionsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,7 +346,8 @@
 				A3095283224E40C20001C48A /* ButtonDesign.swift in Sources */,
 				A30E0F4E2253356300BD8440 /* UserRegistration.swift in Sources */,
 				A3095273224E36260001C48A /* ViewController.swift in Sources */,
-				A30E0F542253539E00BD8440 /* PhoneNumberVerification.swift in Sources */,
+				A30E0F542253539E00BD8440 /* FirebaseManager.swift in Sources */,
+				A33F0ACF22548174006ABEAE /* SignUpOptionsViewController.swift in Sources */,
 				A3291EAB225226D7004B8DEA /* LoginApiHitManager.swift in Sources */,
 				A3095271224E36260001C48A /* AppDelegate.swift in Sources */,
 				A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */,

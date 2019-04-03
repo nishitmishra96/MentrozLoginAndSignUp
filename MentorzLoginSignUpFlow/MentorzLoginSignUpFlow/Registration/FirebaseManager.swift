@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseAuth
 
-class PhoneNumberVerification {
+class FirebaseManager {
     
     private var verificationID = ""
 
@@ -24,6 +24,7 @@ class PhoneNumberVerification {
     // .
         UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
         self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+        print(verificationID)
     }
     }
     func OTPMatching(verificationCode:String)-> Bool{
