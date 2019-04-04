@@ -9,46 +9,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-            timestampString = "576056608.31156"
+            filePath = "MentorzLoginSignUpFlow/Login/LoginScreen.swift"
+            timestampString = "576078376.6860009"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "OTPMatching(verificationCode:handler:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "FacebookButonPressed(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MentorzLoginSignUpFlow.FirebaseManager.OTPMatching(verificationCode: Swift.String, handler: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "MentorzLoginSignUpFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentrozLoginAndSignUp/MentorzLoginSignUpFlow/MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-                  timestampString = "576056608.543"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "390">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MentorzLoginSignUpFlow.FirebaseManager.OTPMatching(verificationCode: Swift.String, handler: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "MentorzLoginSignUpFlow"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/himanshu/Desktop/MentrozLoginAndSignUp/MentorzLoginSignUpFlow/MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-                  timestampString = "576056608.546441"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "53">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,45 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-            timestampString = "576056608.31214"
+            filePath = "MentorzLoginSignUpFlow/FBManager.swift"
+            timestampString = "576078376.686094"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
             endingLineNumber = "21"
-            landmarkName = "phoneNumberVerifier(phoneNumber:handler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-            timestampString = "576056664.672107"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "OTPMatching(verificationCode:handler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MentorzLoginSignUpFlow/Registration/FirebaseManager.swift"
-            timestampString = "576056700.721788"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "OTPMatching(verificationCode:handler:)"
+            landmarkName = "init(fromFBResponse:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

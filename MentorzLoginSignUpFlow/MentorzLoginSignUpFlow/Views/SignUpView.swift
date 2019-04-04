@@ -41,7 +41,14 @@ class SignUpView: UIViewController,CountryCodeDelegate {
                 return;
             }
         }
-        self.navigationController?.popViewController(animated: true)
+        if self.navigationController?.viewControllers.count == 3
+        {
+            let loginScreen = Storyboard.login.instanceOf(viewController: LoginScreen.self)
+            self.navigationController?.pushViewController(loginScreen!, animated: true)
+        }
+        else{
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     func didSelectCountryCode(country: Country) {
         self.countryCode.setTitle(country.code, for: .normal)
