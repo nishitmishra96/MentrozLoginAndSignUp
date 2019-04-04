@@ -20,15 +20,15 @@ class FirstScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
-//        self.myImageView.delegate = self as? SwiftyGifDelegate
-//        let gif = UIImage(gifName: "onBoardVideo.gif", levelOfIntegrity:0.5)
-//        self.myImageView.setGifImage(gif)
-//        guard let confettiImageView = UIImageView.fromGif(frame: myImageView.frame, resourceName: "onBoardVideo") else { return }
-//        myImageView.addSubview(confettiImageView)
-//        confettiImageView.startAnimating()
+        self.myImageView.delegate = self as? SwiftyGifDelegate
+        let gif = UIImage(gifName: "onBoardVideo.gif", levelOfIntegrity:0.5)
+        self.myImageView.setGifImage(gif)
+        guard let confettiImageView = UIImageView.fromGif(frame: myImageView.frame, resourceName: "onBoardVideo") else { return }
+        myImageView.addSubview(confettiImageView)
+    //    confettiImageView.startAnimating()
 //
 //        confettiImageView.animationDuration = 3
-//        confettiImageView.animationRepeatCount = 1
+        confettiImageView.animationRepeatCount = 0
     }
 }
 

@@ -14,8 +14,8 @@ class UserManager: NSObject{
     var user : User?
     
     func LoginWithPhoneNumber(userData: UserCredentials,handler: @escaping ((Int,User?)->(Void))){
-        if userData.social_id == nil{
-        LoginApiHitManager.init().RequestForPhoneNumberLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
+        if userData.socialId == nil{
+        LoginApiHitManager.init().PhoneNumberLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
             if let response = responseFromApiHitManager{
                 let user = User(userData: response)
                 self.user = user
@@ -27,7 +27,7 @@ class UserManager: NSObject{
         }
     }
         else{
-            LoginApiHitManager.init().RequestForSocialLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
+            LoginApiHitManager.init().SocialLogin(dataObject: userData) { (statusCode, responseFromApiHitManager) -> (Void) in
                 if let response = responseFromApiHitManager{
                     let user = User(userData: response)
                     self.user = user

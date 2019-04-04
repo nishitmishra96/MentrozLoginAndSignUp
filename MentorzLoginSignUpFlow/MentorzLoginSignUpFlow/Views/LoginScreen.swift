@@ -1,11 +1,17 @@
 import UIKit
 import Foundation
 import FBSDKLoginKit
+import SVProgressHUD
 class LoginScreen: UIViewController,CountryCodeDelegate{
     
     @IBOutlet weak var countryCode: UIButton!
     @IBOutlet weak var loginButton: UIButton!
-     var countryCodetextField : String = ""
+    @IBOutlet weak var number: UITextField!
+    @IBOutlet weak var password: UITextField!
+    private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
+    var countryCodetextField : String = ""
+    private var userCredentialController : UserCredentialController = UserCredentialController()
+
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         let signUpOptions = Storyboard.signup.instanceOf(viewController: SignUpOptionsViewController.self)!
@@ -19,6 +25,21 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
         self.present(cc, animated: true , completion: nil)
     }
     @IBAction func LoginButtonPressed(_ sender: Any) {
+        SVProgressHUD.show()
+        self.phoneNumber.number = self.number.text
+        self.userCredentialController.phonenumber = self.phoneNumber
+        self.userCredentialController.password = self.password.text
+        userCredentialController.loginUser { (statusCode, user) in
+            SVProgressHUD.dismiss()
+            if statusCode == 200 {
+                let homeScreen = Storyboard.signup.instanceOf(viewController: HomeScreen.self)!
+                self.navigationController?.pushViewController(homeScreen, animated: true)
+            }
+            else
+            {
+                SVProgressHUD.showError(withStatus: "Wrong Credentials")
+            }
+        }
 
     }
     @IBAction func FacebookButonPressed(_ sender: Any) {
@@ -33,8 +54,11 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     
     @IBAction func LinkedinButtonPressed(_ sender: Any) {
     }
+    
     func didSelectCountryCode(country: Country) {
         self.countryCode.setTitle(country.code, for: .normal)
+        self.phoneNumber.cc = country.code
+        self.phoneNumber.isoAlpha2Cc = ""
     }
     
     override func viewDidLoad() {
@@ -45,9 +69,9 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
 //        data.email = ""
 //
 //        var loginAPI = LoginApiHitManager()
-//        loginAPI.RequestForPhoneNumberLogin(dataObject: data, handler: { (statusCode) -> (Void) in
+//        loginAPI.PhoneNumberLogin(dataObject: data, handler: { (statusCode) -> (Void) in
 //        })
-//        loginAPI.RequestForSocialLogin(dataObject: data, handler: { (statusCode) -> (Void) in
+//        loginAPI.SocialLogin(dataObject: data, handler: { (statusCode) -> (Void) in
 //        })
 //        var registration = Registration()
 //        var number = FirebaseManager()

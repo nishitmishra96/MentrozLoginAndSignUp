@@ -13,40 +13,21 @@ class FirebaseManager {
     
     private var verificationID = ""
 
-    func phoneNumberVerifier(phoneNumber : PhoneNumber,handler: @escaping ((Bool)->(Void)))
+    func phoneNumberVerifier(phoneNumber : PhoneNumber,handler: @escaping ((Error?)->(Void)))
     {
     PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber.getPhoneNumber(), uiDelegate: nil) { (verificationID, error) in
-    if let error = error {
-        print("\(error.localizedDescription)")
-        handler(false)
-    return
-    }
-    // Sign in using the verificationID and the code sent to the user
-    // .
-//        UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+
         self.verificationID = /verificationID
-        print(verificationID)
-        handler(true)
+        handler(error)
     }
     }
-    func OTPMatching(verificationCode:String,handler: @escaping ((Bool)->(Void))){
+    func OTPMatching(verificationCode:String,handler: @escaping ((Error?)->(Void))){
         let credential = PhoneAuthProvider.provider().credential(
             withVerificationID: self.verificationID,
             verificationCode: verificationCode)
         Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
-            if let error = error {
-                // ...
-                handler(false)
-                print("OTP NOT VERIFIED")
-                return
-            }
-            else{
-            // User is signed in
-            // ...
-                handler(true)
-                print("HEY OTP VERIFIED")
+                handler(error)
         }
     }
-}
 }
 

@@ -9,8 +9,9 @@
 import UIKit
 
 class SignUpOptionsViewController: UIViewController {
-    //MARK:- IBOutlets
-    
+    //MARK:- IBOutlets and Variables
+    private var userCredentialController : UserCredentialController = UserCredentialController()
+
     //Mark:- IBActions
     
     @IBAction func AlreadyRegisteredButtonPressed(_ sender: Any) {
@@ -25,6 +26,7 @@ class SignUpOptionsViewController: UIViewController {
     }
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         let signUpView = Storyboard.signup.instanceOf(viewController: SignUpView.self)!
+        signUpView.userCredentialController = self.userCredentialController
         self.navigationController?.pushViewController(signUpView, animated: true)
     }
     

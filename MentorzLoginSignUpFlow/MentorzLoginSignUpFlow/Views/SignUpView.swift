@@ -14,19 +14,22 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var userCredentialController = UserCredentialController()
+
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
-    var firebase = FirebaseManager()
+    
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         phoneNumber.number = phoneNumberTextField.text
-        self.firebase.phoneNumberVerifier(phoneNumber: self.phoneNumber) { (isOTPSent) -> (Void) in
-            if !isOTPSent {
-                print("OTP SENDING FAILED")
+        userCredentialController.sendOTP { (error) in
+            if let error = error {
+                print(error.localizedDescription)
             }
             else{
-                let OTPClass = Storyboard.signup.instanceOf(viewController: EnterOtp.self)!
-                OTPClass.firebase = self.firebase
+                let OTPClass = Storyboard.signup.instanceOf(viewController: OTPScreen.self)!
+                OTPClass.userCredentialController = self.userCredentialController
                 self.navigationController?.pushViewController(OTPClass, animated: true)
             }
+            
         }
     }
     @IBAction func ccButtonPressed(_ sender: Any) {

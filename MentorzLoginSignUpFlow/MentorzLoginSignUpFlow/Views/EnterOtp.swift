@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class EnterOtp: UIViewController {
 
     @IBOutlet weak var OTPTextField: UITextField!
+    var userCredentialController = UserCredentialController()
     var firebase : FirebaseManager?
     @IBAction func VerifyOTP(_ sender: Any) {
-        firebase?.OTPMatching(verificationCode: /OTPTextField.text) { (isOTPVerified) -> (Void) in
-            print(isOTPVerified)
+        SVProgressHUD.show()
+        firebase?.OTPMatching(verificationCode: /OTPTextField.text) { (error) -> (Void) in
+            if let error = error{
+                SVProgressHUD.dismiss()
+                SVProgressHUD.showError(withStatus: "Wrong OTP Entered")        }
+            else{
+                 SVProgressHUD.showSuccess(withStatus: "OTP VERIFIED!!")
+            }
+            
+           
         }
     }
     override func viewDidLoad() {

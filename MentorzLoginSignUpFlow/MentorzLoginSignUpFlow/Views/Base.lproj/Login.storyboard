@@ -104,6 +104,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="hPg-Ba-Yk8"/>
+                    <connections>
+                        <outlet property="myImageView" destination="plT-b5-izD" id="nMh-TQ-z98"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +307,8 @@
                     <connections>
                         <outlet property="countryCode" destination="nBh-dh-bin" id="r7K-xT-dBh"/>
                         <outlet property="loginButton" destination="uSg-pb-KfW" id="Wp7-ge-16o"/>
+                        <outlet property="number" destination="oOu-Ct-JPx" id="vwU-YJ-rny"/>
+                        <outlet property="password" destination="V5G-Bj-K2i" id="liZ-Qr-wTu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAC-Ls-yCW" userLabel="First Responder" sceneMemberID="firstResponder"/>

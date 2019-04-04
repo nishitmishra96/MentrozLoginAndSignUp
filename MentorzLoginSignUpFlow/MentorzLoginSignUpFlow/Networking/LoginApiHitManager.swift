@@ -10,10 +10,9 @@ import Foundation
 import Moya
 import ObjectMapper
 class LoginApiHitManager: NSObject{
-    
     let loginAndSignUpApi = MoyaProvider<LoginAndSignUpApiCollection>()
     
-    func RequestForPhoneNumberLogin(dataObject: UserCredentials,handler:@escaping ((Int,ResponseHandlerForLogin?)->(Void))){
+    func PhoneNumberLogin(dataObject: UserCredentials,handler:@escaping ((Int,ResponseHandlerForLogin?)->(Void))){
         loginAndSignUpApi.request(.PhoneNumberLogin(dataObject: dataObject)) { (response) in
             switch response{
             case .success(let result):
@@ -26,7 +25,7 @@ class LoginApiHitManager: NSObject{
             }
         }
     }
-    func RequestForSocialLogin(dataObject: UserCredentials,handler:@escaping ((Int,ResponseHandlerForLogin?)->(Void))){
+    func SocialLogin(dataObject: UserCredentials,handler:@escaping ((Int,ResponseHandlerForLogin?)->(Void))){
         loginAndSignUpApi.request(.SocialLogin(dataObject: dataObject)) { (response) in
             switch response{
             case .success(let result):

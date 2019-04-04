@@ -19,7 +19,7 @@ class UserCredentials : NSObject, Mappable{
     var password : String?
     var phoneNumber : PhoneNumber?
     var userProfile : UserProfile?
-    var social_id : Int64?
+    var socialId : Int64?
     var social_source: String?
     
     override  init() {
@@ -35,7 +35,7 @@ class UserCredentials : NSObject, Mappable{
         password <- map["password"]
         phoneNumber <- map["phone_number"]
         userProfile <- map["user_profile"]
-        social_id  <- map["social_id"]
+        socialId  <- map["social_id"]
         social_source <- map["social_source"]
         email <- map["email_id"]
     }
