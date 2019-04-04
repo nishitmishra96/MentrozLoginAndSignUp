@@ -37,6 +37,7 @@
 		A37A4DAA2255D68000776258 /* EnterOtp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A4DA92255D68000776258 /* EnterOtp.swift */; };
 		A37A4DAC2255DCE300776258 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37A4DAB2255DCE300776258 /* SignUp.storyboard */; };
 		A37A4DAE2255DEDA00776258 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A4DAD2255DEDA00776258 /* StoryBoards.swift */; };
+		A37A4DB02255EC6B00776258 /* Prefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A4DAF2255EC6B00776258 /* Prefix.swift */; };
 		A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequests.swift */; };
 		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
 		FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */; };
@@ -78,6 +79,7 @@
 		A37A4DA92255D68000776258 /* EnterOtp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterOtp.swift; sourceTree = "<group>"; };
 		A37A4DAB2255DCE300776258 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		A37A4DAD2255DEDA00776258 /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
+		A37A4DAF2255EC6B00776258 /* Prefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prefix.swift; sourceTree = "<group>"; };
 		A3C6BDD6224F458B0018007A /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				A3095279224E36280001C48A /* LaunchScreen.storyboard */,
 				A30E0F632253A0E100BD8440 /* GoogleService-Info.plist */,
 				A309527C224E36280001C48A /* Info.plist */,
+				A37A4DAF2255EC6B00776258 /* Prefix.swift */,
 			);
 			path = MentorzLoginSignUpFlow;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				A3291EAB225226D7004B8DEA /* LoginApiHitManager.swift in Sources */,
 				A3095271224E36260001C48A /* AppDelegate.swift in Sources */,
 				A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */,
+				A37A4DB02255EC6B00776258 /* Prefix.swift in Sources */,
 				A3291EA522520701004B8DEA /* UserProfile.swift in Sources */,
 				A3291EA922521193004B8DEA /* DeviceInfo.swift in Sources */,
 				A366D8AF2254EB330050E72D /* ccButtonDesign.swift in Sources */,

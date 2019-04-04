@@ -254,7 +254,7 @@
         <!--Enter Otp-->
         <scene sceneID="ya4-wA-AGF">
             <objects>
-                <viewController id="N0Z-Du-Mxa" customClass="EnterOtp" customModule="MentorzLoginSignUpFlow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterOtp" id="N0Z-Du-Mxa" customClass="EnterOtp" customModule="MentorzLoginSignUpFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MXN-il-coT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

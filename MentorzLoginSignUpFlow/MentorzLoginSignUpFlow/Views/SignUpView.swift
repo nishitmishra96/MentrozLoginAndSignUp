@@ -14,21 +14,12 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     var firebase = FirebaseManager()
-    var name : String = ""
-    var cc : String = ""
-    var phoneNumber : String = ""
-    var password : String = ""
-    var OTP = "222"
     @IBAction func SignUpButtonPressed(_ sender: Any) {
-        self.name = self.nameTextField?.text ?? ""
-        self.phoneNumber = self.phoneNumberTextField?.text ?? ""
-        self.password = self.passwordTextField?.text ?? ""
-        cc = countryCode.titleLabel?.text ?? "+91"
-        cc = cc.replacingOccurrences(of: "\\", with: "")
-        cc = getPhoneNumber()
-        self.firebase.phoneNumberVerifier(phoneNumber: cc) { (isOTPSent) -> (Void) in
-            if isOTPSent {
+        phoneNumber.number = phoneNumberTextField.text
+        self.firebase.phoneNumberVerifier(phoneNumber: self.phoneNumber) { (isOTPSent) -> (Void) in
+            if !isOTPSent {
                 print("OTP SENDING FAILED")
             }
             else{
@@ -54,6 +45,8 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     }
     func didSelectCountryCode(country: Country) {
         self.countryCode.setTitle(country.code, for: .normal)
+        self.phoneNumber.cc = country.code
+        self.phoneNumber.isoAlpha2Cc = ""
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,19 +54,5 @@ class SignUpView: UIViewController,CountryCodeDelegate {
         // Do any additional setup after loading the view.
     }
     
-    func getPhoneNumber()-> String
-    {
-        return "\(String(describing: cc))"+"\(String(describing: phoneNumber))"
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+ 
 }

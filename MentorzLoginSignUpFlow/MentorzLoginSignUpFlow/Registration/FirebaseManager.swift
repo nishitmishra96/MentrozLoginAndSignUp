@@ -13,9 +13,9 @@ class FirebaseManager {
     
     private var verificationID = ""
 
-    func phoneNumberVerifier(phoneNumber : String,handler: @escaping ((Bool)->(Void)))
+    func phoneNumberVerifier(phoneNumber : PhoneNumber,handler: @escaping ((Bool)->(Void)))
     {
-    PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
+    PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber.getPhoneNumber(), uiDelegate: nil) { (verificationID, error) in
     if let error = error {
         print("\(error.localizedDescription)")
         handler(false)
@@ -24,7 +24,7 @@ class FirebaseManager {
     // Sign in using the verificationID and the code sent to the user
     // .
 //        UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-        self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+        self.verificationID = /verificationID
         print(verificationID)
         handler(true)
     }

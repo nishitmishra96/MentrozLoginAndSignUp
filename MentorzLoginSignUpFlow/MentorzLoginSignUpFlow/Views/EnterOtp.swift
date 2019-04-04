@@ -11,9 +11,10 @@ import UIKit
 class EnterOtp: UIViewController {
 
     @IBOutlet weak var OTPTextField: UITextField!
-    var firebase = FirebaseManager()
+    var firebase : FirebaseManager?
     @IBAction func VerifyOTP(_ sender: Any) {
-        firebase.OTPMatching(verificationCode: OTPTextField.text ?? "") { (isOTPVerified) -> (Void) in
+        firebase?.OTPMatching(verificationCode: /OTPTextField.text) { (isOTPVerified) -> (Void) in
+            print(isOTPVerified)
         }
     }
     override func viewDidLoad() {
