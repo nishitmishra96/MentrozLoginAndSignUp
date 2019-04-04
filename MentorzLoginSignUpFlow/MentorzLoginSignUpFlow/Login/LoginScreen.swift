@@ -1,14 +1,11 @@
 import UIKit
 import Foundation
+import FBSDKLoginKit
 class LoginScreen: UIViewController,CountryCodeDelegate{
     
     @IBOutlet weak var countryCode: UIButton!
-    var countryCodetextField : String = ""
-    func didSelectCountryCode(country: Country) {
-        self.countryCode.setTitle(country.code, for: .normal) 
-    }
-    
     @IBOutlet weak var loginButton: UIButton!
+     var countryCodetextField : String = ""
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         let signUpOptions = Storyboard.signup.instanceOf(viewController: SignUpOptionsViewController.self)!
@@ -24,8 +21,20 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     @IBAction func LoginButtonPressed(_ sender: Any) {
 
     }
-    @IBAction func OTP(_ sender: Any) {
-
+    @IBAction func FacebookButonPressed(_ sender: Any) {
+        FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in
+            if let fbuser = userprofile {
+                print(fbuser.id)
+            }else{
+                print("errrorrrrrr",error)
+            }
+        }
+    }
+    
+    @IBAction func LinkedinButtonPressed(_ sender: Any) {
+    }
+    func didSelectCountryCode(country: Country) {
+        self.countryCode.setTitle(country.code, for: .normal)
     }
     
     override func viewDidLoad() {

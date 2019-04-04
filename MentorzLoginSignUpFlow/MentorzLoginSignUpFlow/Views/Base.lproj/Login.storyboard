@@ -22,9 +22,9 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpn-c3-X5n" customClass="LoginSignUpButtonStyle" customModule="MentorzLoginSignUpFlow" customModuleProvider="target">
-                                <rect key="frame" x="25" y="535.5" width="325" height="40"/>
+                                <rect key="frame" x="25" y="527.5" width="325" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="mvd-7y-99x"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="07C-ht-zzt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="17"/>
                                 <state key="normal" title="Sign Up"/>
@@ -159,6 +159,9 @@
                                 <state key="normal" title="Linkedin">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="LinkedinButtonPressed:" destination="jli-na-HYp" eventType="touchUpInside" id="Nd4-sf-6Vi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Via" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVB-gW-yUa">
                                 <rect key="frame" x="150" y="118" width="75" height="20"/>
@@ -175,6 +178,9 @@
                                 <state key="normal" title="Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="FacebookButonPressed:" destination="jli-na-HYp" eventType="touchUpInside" id="doL-aP-8Fi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSg-pb-KfW" customClass="LoginSignUpButtonStyle" customModule="MentorzLoginSignUpFlow" customModuleProvider="target">
                                 <rect key="frame" x="16" y="450" width="343" height="48"/>
@@ -183,7 +189,7 @@
                                 </constraints>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="OTP:" destination="jli-na-HYp" eventType="touchUpInside" id="Vlh-Xl-dGr"/>
+                                    <action selector="LoginButtonPressed:" destination="jli-na-HYp" eventType="touchUpInside" id="DkO-re-H9t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s6I-Wc-zGD">
@@ -342,7 +348,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uIq-2C-c86" id="tiR-Bl-aPI">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Australia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1d-bo-50L">
