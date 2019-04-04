@@ -11,6 +11,9 @@ target 'MentorzLoginSignUpFlow' do
    pod 'ObjectMapper', '~> 3.4'
    pod 'Firebase/Core'
    pod 'Firebase/Auth'
+   pod 'SwiftyGif'
+   pod 'FLAnimatedImage', '~> 1.0'
+   pod 'IQKeyboardManagerSwift'
 
 
 end

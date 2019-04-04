@@ -11,23 +11,25 @@ import UIKit
 class SignUpOptionsViewController: UIViewController {
     //MARK:- IBOutlets
     
-    @IBOutlet weak var signUpButton: UIButton!
-    
     //Mark:- IBActions
     
-    @IBAction func LoginButtonPressed(_ sender: Any) {
-        let loginScreen = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginScreen") as! LoginScreen
-        self.present(loginScreen, animated: true, completion: nil)
+    @IBAction func AlreadyRegisteredButtonPressed(_ sender: Any) {
+       if self.navigationController?.viewControllers.count == 2
+       {
+            let loginScreen = Storyboard.login.instanceOf(viewController: LoginScreen.self)
+            self.navigationController?.pushViewController(loginScreen!, animated: true)
+        }
+       else{
+        self.navigationController?.popViewController(animated: true)
+        }
     }
-    
     @IBAction func SignUpButtonPressed(_ sender: Any) {
-        
-        
+        let signUpView = Storyboard.signup.instanceOf(viewController: SignUpView.self)!
+        self.navigationController?.pushViewController(signUpView, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ButtonDesign.buttonStyle(button: signUpButton)
 
         // Do any additional setup after loading the view.
     }
