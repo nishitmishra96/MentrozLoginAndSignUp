@@ -15,7 +15,7 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    var userCredentialController = UserCredentialController()
+    var userCredentialController = UserCredentialController(isRegistration: true)
 
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     
@@ -23,17 +23,16 @@ class SignUpView: UIViewController,CountryCodeDelegate {
         phoneNumber.number = phoneNumberTextField.text
         userCredentialController.phonenumber = self.phoneNumber
         
-        userCredentialController.registerUser { (isRegistered) in
-            if isRegistered{
+        userCredentialController.sendOTP { (error) in
+            if let apiHitError = error {
+                SVProgressHUD.showError(withStatus: apiHitError.localizedDescription)
+            }
+            else{
                 let OTPClass = Storyboard.signup.instanceOf(viewController: OTPScreen.self)!
                 OTPClass.userCredentialController = self.userCredentialController
                 self.navigationController?.pushViewController(OTPClass, animated: true)
             }
-            else {
-                SVProgressHUD.showError(withStatus: "Error")
-            }
         }
-        
     }
     @IBAction func ccButtonPressed(_ sender: Any) {
         let cc = Storyboard.login.instanceOf(viewController: CountryCodeVC.self)!

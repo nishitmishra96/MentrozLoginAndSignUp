@@ -33,9 +33,7 @@ class OTPScreen: UIViewController {
                 SVProgressHUD.showError(withStatus: err.localizedDescription)
             }else{
                 self.userCredentialController?.registerUser(handler: { (result) in
-                    
                     if result{
-                
                     let homeScreen = UIStoryboard.init(name: "LoggedInUser", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
                     self.navigationController?.pushViewController(homeScreen, animated: true)
                     }

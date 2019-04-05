@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import IQKeyboardManagerSwift
 import FBSDKLoginKit
+import LinkedinSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -29,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         var handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String, annotation: options[UIApplication.OpenURLOptionsKey.annotation] as! String)
         // Add any custom logic here.
+        if LinkedinSwiftHelper.shouldHandle(url) {
+            return LinkedinSwiftHelper.application(app, open: url, sourceApplication: nil, annotation: nil)
+        }
         return handled;
     }
 

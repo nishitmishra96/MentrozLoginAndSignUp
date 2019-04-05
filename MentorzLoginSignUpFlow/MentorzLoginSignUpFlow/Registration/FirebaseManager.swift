@@ -14,7 +14,8 @@ class FirebaseManager {
     private var verificationID = ""
 
     func phoneNumberVerifier(phoneNumber : PhoneNumber,handler: @escaping ((Error?)->(Void)))
-    {
+{
+    var number = 
     PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber.getPhoneNumber(), uiDelegate: nil) { (verificationID, error) in
 
         self.verificationID = /verificationID

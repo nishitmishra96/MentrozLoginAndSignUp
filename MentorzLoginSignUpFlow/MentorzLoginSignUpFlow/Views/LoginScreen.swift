@@ -2,6 +2,7 @@ import UIKit
 import Foundation
 import FBSDKLoginKit
 import SVProgressHUD
+import LinkedinSwift
 class LoginScreen: UIViewController,CountryCodeDelegate{
     
     @IBOutlet weak var countryCode: UIButton!
@@ -11,8 +12,15 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     @IBOutlet weak var password: UITextField!
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     var countryCodetextField : String = ""
-    private var userCredentialController : UserCredentialController = UserCredentialController()
-
+    private var userCredentialController : UserCredentialController = UserCredentialController(isLogin: true)
+//    let linkedinHelper = LinkedinSwiftHelper(configuration:
+//        LinkedinSwiftConfiguration(
+//            clientId: "77tn2ar7gq6lgv",
+//            clientSecret: "iqkDGYpWdhf7WKzA",
+//            state: "DLKDJF45DIWOERCM",
+//            permissions: ["r_basicprofile", "r_emailaddress"]
+//        ),nativeAppChecker: WebLoginOnly()
+//    )
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         let signUpOptions = Storyboard.signup.instanceOf(viewController: SignUpOptionsViewController.self)!
@@ -67,6 +75,13 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     }
     
     @IBAction func LinkedinButtonPressed(_ sender: Any) {
+//        linkedinHelper.authorizeSuccess({ (lsToken) -> Void in
+//            //Login success lsToken
+//        }, error: { (error) -> Void in
+//            //Encounter error: error.localizedDescription
+//        }, cancel: { () -> Void in
+//            //User Cancelled!
+//        })
     }
     
     func didSelectCountryCode(country: Country) {

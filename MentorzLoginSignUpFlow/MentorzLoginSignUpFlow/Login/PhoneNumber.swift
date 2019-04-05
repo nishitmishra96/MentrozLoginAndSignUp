@@ -44,6 +44,6 @@ public class PhoneNumber : NSObject, Mappable{
     
     func getPhoneNumber()-> String
     {
-        return "\(/cc)"+"\(/number)"
+        return "+"+"\(/cc)"+"\(/number)"
     }
 }

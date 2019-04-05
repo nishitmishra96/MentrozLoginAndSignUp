@@ -12,7 +12,7 @@ import SVProgressHUD
 class EnterOtp: UIViewController {
 
     @IBOutlet weak var OTPTextField: UITextField!
-    var userCredentialController = UserCredentialController()
+    var userCredentialController = UserCredentialController(isRegistration: true)
     var firebase : FirebaseManager?
     @IBAction func VerifyOTP(_ sender: Any) {
         SVProgressHUD.show()

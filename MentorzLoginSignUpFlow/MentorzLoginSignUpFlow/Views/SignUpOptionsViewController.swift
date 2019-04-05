@@ -10,7 +10,7 @@ import UIKit
 
 class SignUpOptionsViewController: UIViewController {
     //MARK:- IBOutlets and Variables
-    private var userCredentialController : UserCredentialController = UserCredentialController()
+    private var userCredentialController : UserCredentialController = UserCredentialController(isRegistration: true)
 
     //Mark:- IBActions
     

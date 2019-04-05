@@ -46,6 +46,7 @@
 		A389D6BA2256858800D86567 /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6B92256858800D86567 /* RegistrationManager.swift */; };
 		A389D6BE2256ABBD00D86567 /* LoggedInUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */; };
 		A389D6C02256AC6B00D86567 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6BF2256AC6B00D86567 /* HomeScreen.swift */; };
+		A3B0CA8122576AD900C1BD81 /* LinkedinLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0CA8022576AD900C1BD81 /* LinkedinLogin.swift */; };
 		A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequests.swift */; };
 		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
 		FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */; };
@@ -97,6 +98,7 @@
 		A389D6B92256858800D86567 /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
 		A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedInUser.storyboard; sourceTree = "<group>"; };
 		A389D6BF2256AC6B00D86567 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A3B0CA8022576AD900C1BD81 /* LinkedinLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedinLogin.swift; sourceTree = "<group>"; };
 		A3C6BDD6224F458B0018007A /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				A3C6BE13224FCFD90018007A /* LoginScreen.swift */,
 				A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */,
 				A389D6BF2256AC6B00D86567 /* HomeScreen.swift */,
+				A3B0CA8022576AD900C1BD81 /* LinkedinLogin.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -404,11 +407,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IOSLinkedInAPIFix/IOSLinkedInAPIFix.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/LinkedinSwift/LinkedinSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -420,11 +426,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IOSLinkedInAPIFix.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LinkedinSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -465,6 +474,7 @@
 				A3291EA522520701004B8DEA /* UserProfile.swift in Sources */,
 				A3291EA922521193004B8DEA /* DeviceInfo.swift in Sources */,
 				A366D8AF2254EB330050E72D /* ccButtonDesign.swift in Sources */,
+				A3B0CA8122576AD900C1BD81 /* LinkedinLogin.swift in Sources */,
 				A30E0F472252530F00BD8440 /* ResponseHandlerForLogin.swift in Sources */,
 				A30E0F5C22536A0400BD8440 /* UserManager.swift in Sources */,
 				A37A4DAE2255DEDA00776258 /* StoryBoards.swift in Sources */,

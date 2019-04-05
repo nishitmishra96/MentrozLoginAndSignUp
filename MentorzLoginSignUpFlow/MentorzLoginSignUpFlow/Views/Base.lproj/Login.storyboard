@@ -316,6 +316,21 @@
             </objects>
             <point key="canvasLocation" x="1804" y="82.3088455772114"/>
         </scene>
+        <!--Linkedin Login-->
+        <scene sceneID="uDY-cZ-kaC">
+            <objects>
+                <viewController storyboardIdentifier="LinkedinLogin" id="6B7-WJ-vK1" customClass="LinkedinLogin" customModule="MentorzLoginSignUpFlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mXX-my-Bdc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3VA-xu-6sx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nN-ua-UwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2367" y="797"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oFR-8G-xI1">
             <objects>

@@ -525,6 +525,7 @@
                         <outlet property="secondTxtField" destination="rjb-gF-aQn" id="CQc-uI-OIU"/>
                         <outlet property="sixthTxtField" destination="vZK-50-Ujg" id="VPL-YI-f5x"/>
                         <outlet property="thirdTxtField" destination="5kY-BR-GNo" id="2zG-b4-ah2"/>
+                        <outlet property="verifyOTPbutton" destination="EGn-mf-kis" id="Lrb-W7-Fr1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qG-Qv-rvK" userLabel="First Responder" sceneMemberID="firstResponder"/>
