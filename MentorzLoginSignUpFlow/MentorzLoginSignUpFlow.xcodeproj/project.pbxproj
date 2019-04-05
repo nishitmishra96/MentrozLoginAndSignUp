@@ -41,6 +41,11 @@
 		A37A4DB322560CAB00776258 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37A4DB122560CAA00776258 /* FBSDKCoreKit.framework */; };
 		A37A4DB422560CAB00776258 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37A4DB222560CAB00776258 /* FBSDKLoginKit.framework */; };
 		A37A4DBA22561DD900776258 /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A4DB922561DD900776258 /* FBManager.swift */; };
+		A389D6B52256473F00D86567 /* PutOtp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6B42256473F00D86567 /* PutOtp.swift */; };
+		A389D6B72256491C00D86567 /* UserDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6B62256491C00D86567 /* UserDataController.swift */; };
+		A389D6BA2256858800D86567 /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6B92256858800D86567 /* RegistrationManager.swift */; };
+		A389D6BE2256ABBD00D86567 /* LoggedInUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */; };
+		A389D6C02256AC6B00D86567 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6BF2256AC6B00D86567 /* HomeScreen.swift */; };
 		A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequests.swift */; };
 		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
 		FFBBC20669123A3DAEF75D6E /* Pods_MentorzLoginSignUpFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA700D08DD8E6AFE1CBA495 /* Pods_MentorzLoginSignUpFlow.framework */; };
@@ -87,6 +92,11 @@
 		A37A4DB222560CAB00776258 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A37A4DB5225611C000776258 /* MentorzLoginSignUpFlow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MentorzLoginSignUpFlow-Bridging-Header.h"; sourceTree = "<group>"; };
 		A37A4DB922561DD900776258 /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		A389D6B42256473F00D86567 /* PutOtp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutOtp.swift; sourceTree = "<group>"; };
+		A389D6B62256491C00D86567 /* UserDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataController.swift; sourceTree = "<group>"; };
+		A389D6B92256858800D86567 /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
+		A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedInUser.storyboard; sourceTree = "<group>"; };
+		A389D6BF2256AC6B00D86567 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A3C6BDD6224F458B0018007A /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E8F32A1EC6953DDEE05D930C /* Pods-MentorzLoginSignUpFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorzLoginSignUpFlow.debug.xcconfig"; path = "Target Support Files/Pods-MentorzLoginSignUpFlow/Pods-MentorzLoginSignUpFlow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +145,7 @@
 				A30E0F562253681800BD8440 /* Controller */,
 				A30E0F552253681000BD8440 /* Views */,
 				A30E0F4C2253351A00BD8440 /* Registration */,
+				A389D6B82256854E00D86567 /* Register */,
 				A30E0F482253348900BD8440 /* Login */,
 				A3095279224E36280001C48A /* LaunchScreen.storyboard */,
 				A30E0F632253A0E100BD8440 /* GoogleService-Info.plist */,
@@ -155,7 +166,6 @@
 				A3291EA622521150004B8DEA /* PhoneNumber.swift */,
 				A3291EA422520701004B8DEA /* UserProfile.swift */,
 				A3291EA822521193004B8DEA /* DeviceInfo.swift */,
-				A3C6BE13224FCFD90018007A /* LoginScreen.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -185,6 +195,10 @@
 				A366D8B02254ECB50050E72D /* SocialMediaButtonDesign.swift */,
 				A37A4DA92255D68000776258 /* EnterOtp.swift */,
 				A37A4DAB2255DCE300776258 /* SignUp.storyboard */,
+				A389D6B42256473F00D86567 /* PutOtp.swift */,
+				A3C6BE13224FCFD90018007A /* LoginScreen.swift */,
+				A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */,
+				A389D6BF2256AC6B00D86567 /* HomeScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 		A30E0F562253681800BD8440 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A389D6B62256491C00D86567 /* UserDataController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +263,14 @@
 			children = (
 			);
 			path = XML;
+			sourceTree = "<group>";
+		};
+		A389D6B82256854E00D86567 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A389D6B92256858800D86567 /* RegistrationManager.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		EA5F20DB191A2D397683518A /* Pods */ = {
@@ -342,6 +365,7 @@
 				A37A4DAC2255DCE300776258 /* SignUp.storyboard in Resources */,
 				A33F0AD722549EF5006ABEAE /* onBoardVideo.gif in Resources */,
 				A3095278224E36280001C48A /* Assets.xcassets in Resources */,
+				A389D6BE2256ABBD00D86567 /* LoggedInUser.storyboard in Resources */,
 				A3095276224E36260001C48A /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +412,7 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -403,6 +428,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -418,11 +444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A389D6BA2256858800D86567 /* RegistrationManager.swift in Sources */,
+				A389D6C02256AC6B00D86567 /* HomeScreen.swift in Sources */,
 				A30E0F522253531300BD8440 /* User.swift in Sources */,
 				A3291EA3225204F3004B8DEA /* UserCredentials.swift in Sources */,
 				A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */,
 				A3095283224E40C20001C48A /* LoginSignUpButtonStyle.swift in Sources */,
 				A37A4DBA22561DD900776258 /* FBManager.swift in Sources */,
+				A389D6B72256491C00D86567 /* UserDataController.swift in Sources */,
 				A30E0F4E2253356300BD8440 /* UserRegistration.swift in Sources */,
 				A3095273224E36260001C48A /* FirstScreen.swift in Sources */,
 				A30E0F542253539E00BD8440 /* FirebaseManager.swift in Sources */,
@@ -445,6 +474,7 @@
 				A3291EA722521150004B8DEA /* PhoneNumber.swift in Sources */,
 				A33F0ADE2254C1E3006ABEAE /* XMLParser.swift in Sources */,
 				A366D8B12254ECB50050E72D /* SocialMediaButtonDesign.swift in Sources */,
+				A389D6B52256473F00D86567 /* PutOtp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

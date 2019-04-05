@@ -7,6 +7,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     @IBOutlet weak var countryCode: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var number: UITextField!
+    @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     var countryCodetextField : String = ""
@@ -29,10 +30,11 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
         self.phoneNumber.number = self.number.text
         self.userCredentialController.phonenumber = self.phoneNumber
         self.userCredentialController.password = self.password.text
+        self.userCredentialController.email = self.email.text
         userCredentialController.loginUser { (statusCode, user) in
             SVProgressHUD.dismiss()
             if statusCode == 200 {
-                let homeScreen = Storyboard.signup.instanceOf(viewController: HomeScreen.self)!
+                let homeScreen = UIStoryboard.init(name: "LoggedInUser", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
                 self.navigationController?.pushViewController(homeScreen, animated: true)
             }
             else
@@ -58,7 +60,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     func didSelectCountryCode(country: Country) {
         self.countryCode.setTitle(country.code, for: .normal)
         self.phoneNumber.cc = country.code
-        self.phoneNumber.isoAlpha2Cc = ""
+        self.phoneNumber.isoAlpha2Cc = country.isoAlpha2Cc
     }
     
     override func viewDidLoad() {
@@ -66,10 +68,14 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
 //        data.phoneNumber = PhoneNumber(cc: "91",isoAlpha2Cc: "in",number: "9501975529")
 //        data.password = "qwerty"
 //        data.deviceInfo = DeviceInfo(deviceToken: "6556",deviceType: "IOS")
-//        data.email = ""
+//       data.email = ""
 //
 //        var loginAPI = LoginApiHitManager()
-//        loginAPI.PhoneNumberLogin(dataObject: data, handler: { (statusCode) -> (Void) in
+//        SVProgressHUD.show()
+//        loginAPI.PhoneNumberLogin(dataObject: data, handler: { (statusCode,ss)  -> (Void) in
+//            SVProgressHUD.dismiss()
+//            SVProgressHUD.show(withStatus:(String)(statusCode))
+//            SVProgressHUD.dismiss()
 //        })
 //        loginAPI.SocialLogin(dataObject: data, handler: { (statusCode) -> (Void) in
 //        })

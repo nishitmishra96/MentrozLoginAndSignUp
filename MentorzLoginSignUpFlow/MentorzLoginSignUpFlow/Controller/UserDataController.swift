@@ -15,16 +15,16 @@ class UserCredentialController: NSObject {
     override init() {
         request.deviceInfo = DeviceInfo(deviceToken: /UIDevice.current.identifierForVendor?.uuidString, deviceType: "iOS")
         request.phoneNumber = PhoneNumber()
-        request.userProfile = UserProfile()
+ //       request.userProfile = UserProfile()
     }
-    var name:String?{
-        get{
-            return request.userProfile?.name
-        }
-        set{
-            request.userProfile?.name = newValue
-        }
-    }
+//    var name:String?{
+//        get{
+//            return request.userProfile?.name
+//        }
+//        set{
+//            request.userProfile?.name = newValue
+//        }
+//    }
     var password:String?{
         get{
             return request.password

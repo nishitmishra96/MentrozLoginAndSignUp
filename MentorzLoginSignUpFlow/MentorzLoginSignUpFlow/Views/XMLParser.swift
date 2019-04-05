@@ -228,8 +228,8 @@ extension CountryCodeVC:XMLParserDelegate{
         
         if elementName == XML.Tag.country{
             
-            let phoneCode:String? = "+\(attributeDict[XML.Tag.Attribute.phoneCode]!)"
-            country = Country(name: attributeDict[XML.Tag.Attribute.name]!, code:phoneCode!)
+            let phoneCode:String? = "\(attributeDict[XML.Tag.Attribute.phoneCode]!)"
+            country = Country(name: attributeDict[XML.Tag.Attribute.name]!, code:phoneCode!, isoAlpha2Cc: attributeDict[XML.Tag.Attribute.isoAlpha2Cc]!)
             
             if isPreviouslySelectedCountryCode(code: phoneCode!) {
                 country?.isSelected = true;

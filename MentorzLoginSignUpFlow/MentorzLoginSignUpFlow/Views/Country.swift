@@ -14,11 +14,13 @@ class Country: NSObject {
     
     var name:String?
     var code:String?
+    var isoAlpha2Cc:String?
     var isSelected:Bool = false
     
-    init(name:String , code:String) {
+    init(name:String , code:String , isoAlpha2Cc:String) {
         self.name = name;
         self.code = code;
+        self.isoAlpha2Cc = isoAlpha2Cc
         
         super.init();
     }
@@ -43,6 +45,7 @@ struct XML {
             
             static let name = "name"
             static let phoneCode = "phoneCode"
+            static let isoAlpha2Cc = "code"
         }
         
         

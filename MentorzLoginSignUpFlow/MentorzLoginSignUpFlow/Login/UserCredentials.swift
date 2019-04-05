@@ -14,11 +14,12 @@ import ObjectMapper
 
 
 class UserCredentials : NSObject, Mappable{
+    
     var email : String?
     var deviceInfo : DeviceInfo?
     var password : String?
     var phoneNumber : PhoneNumber?
-    var userProfile : UserProfile?
+ //   var userProfile : UserProfile?
     var socialId : Int64?
     var social_source: String?
     
@@ -34,10 +35,9 @@ class UserCredentials : NSObject, Mappable{
         deviceInfo <- map["device_info"]
         password <- map["password"]
         phoneNumber <- map["phone_number"]
-        userProfile <- map["user_profile"]
+ //       userProfile <- map["user_profile"]
         socialId  <- map["social_id"]
         social_source <- map["social_source"]
         email <- map["email_id"]
     }
-
 }
