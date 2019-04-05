@@ -15,5 +15,4 @@ target 'MentorzLoginSignUpFlow' do
    pod 'FLAnimatedImage', '~> 1.0'
    pod 'IQKeyboardManagerSwift'
    pod 'SVProgressHUD'
-
-end
+   pod 'LinkedinSwift', '~> 1.7.7'end

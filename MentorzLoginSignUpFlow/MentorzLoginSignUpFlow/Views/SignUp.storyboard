@@ -322,7 +322,7 @@
         <!--Screen-->
         <scene sceneID="yi3-1A-qsC">
             <objects>
-                <viewController storyboardIdentifier="OTPScreen" automaticallyAdjustsScrollViewInsets="NO" id="RU3-5e-KR0" customClass="OTPScreen" customModule="MentorzSignUpAndLoginFlow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OTPScreen" automaticallyAdjustsScrollViewInsets="NO" id="RU3-5e-KR0" customClass="OTPScreen" customModule="MentorzLoginSignUpFlow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F2j-sz-ccB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -453,6 +453,9 @@
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" red="0.95294117649999999" green="0.20392156859999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ResendOTPButtonPressed:" destination="RU3-5e-KR0" eventType="touchUpInside" id="Vt9-gh-iql"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGn-mf-kis" customClass="LoginSignUpButtonStyle" customModule="MentorzLoginSignUpFlow" customModuleProvider="target">
                                         <rect key="frame" x="16" y="396.5" width="343" height="48"/>

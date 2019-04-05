@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SignUpView: UIViewController,CountryCodeDelegate {
 
@@ -20,17 +21,19 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
         phoneNumber.number = phoneNumberTextField.text
-        userCredentialController.sendOTP { (error) in
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            else{
+        userCredentialController.phonenumber = self.phoneNumber
+        
+        userCredentialController.registerUser { (isRegistered) in
+            if isRegistered{
                 let OTPClass = Storyboard.signup.instanceOf(viewController: OTPScreen.self)!
                 OTPClass.userCredentialController = self.userCredentialController
                 self.navigationController?.pushViewController(OTPClass, animated: true)
             }
-            
+            else {
+                SVProgressHUD.showError(withStatus: "Error")
+            }
         }
+        
     }
     @IBAction func ccButtonPressed(_ sender: Any) {
         let cc = Storyboard.login.instanceOf(viewController: CountryCodeVC.self)!

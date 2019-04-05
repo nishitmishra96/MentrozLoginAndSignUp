@@ -11,4 +11,7 @@ import UIKit
 
 class HomeScreen : UIViewController{
     
+    @IBAction func BackButtonPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

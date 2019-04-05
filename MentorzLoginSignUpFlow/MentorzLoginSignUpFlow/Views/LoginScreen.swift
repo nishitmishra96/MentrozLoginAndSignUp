@@ -27,6 +27,18 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     }
     @IBAction func LoginButtonPressed(_ sender: Any) {
         SVProgressHUD.show()
+        if(/self.number.text?.count > 10)
+        {
+            SVProgressHUD.showError(withStatus: "Number must be of atleast 10 digits")
+        }
+        else if(/countryCode.titleLabel?.text!.count == 0){
+            SVProgressHUD.showError(withStatus: "Please Select Country Code")
+        }
+        else if(/self.password.text?.count < 6)
+        {
+            SVProgressHUD.showError(withStatus: "Minimum Password Length is 6")
+        }
+        else{
         self.phoneNumber.number = self.number.text
         self.userCredentialController.phonenumber = self.phoneNumber
         self.userCredentialController.password = self.password.text
@@ -42,7 +54,7 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
                 SVProgressHUD.showError(withStatus: "Wrong Credentials")
             }
         }
-
+        }
     }
     @IBAction func FacebookButonPressed(_ sender: Any) {
         FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in

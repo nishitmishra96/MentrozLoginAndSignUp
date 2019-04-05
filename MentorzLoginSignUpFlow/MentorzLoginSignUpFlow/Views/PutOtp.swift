@@ -34,6 +34,15 @@ class OTPScreen: UIViewController {
             }else{
                 self.userCredentialController?.registerUser(handler: { (result) in
                     
+                    if result{
+                
+                    let homeScreen = UIStoryboard.init(name: "LoggedInUser", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
+                    self.navigationController?.pushViewController(homeScreen, animated: true)
+                    }
+                    else{
+                        SVProgressHUD.showError(withStatus: "User Already Exists")
+                    }
+                    
                 })
             }
         })
@@ -75,6 +84,14 @@ class OTPScreen: UIViewController {
             }
         }
         
+    }
+    @IBAction func ResendOTPButtonPressed(_ sender: Any) {
+        userCredentialController?.sendOTP(handler: { (error) in
+            if let err = error{
+                SVProgressHUD.showError(withStatus: "Resend OTP")
+            }
+            
+        })
     }
     func setUpView(){
         firstTxtField.delegate = self
