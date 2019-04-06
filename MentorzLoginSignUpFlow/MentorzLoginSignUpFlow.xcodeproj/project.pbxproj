@@ -45,6 +45,7 @@
 		A389D6BA2256858800D86567 /* RegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6B92256858800D86567 /* RegistrationManager.swift */; };
 		A389D6BE2256ABBD00D86567 /* LoggedInUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */; };
 		A389D6C02256AC6B00D86567 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A389D6BF2256AC6B00D86567 /* HomeScreen.swift */; };
+		A3AD653A2258910C003FE2D8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3AD65392258910C003FE2D8 /* Default-568h@2x.png */; };
 		A3B0CA8122576AD900C1BD81 /* LinkedinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0CA8022576AD900C1BD81 /* LinkedinManager.swift */; };
 		A3C6BDD7224F458B0018007A /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BDD6224F458B0018007A /* APIRequests.swift */; };
 		A3C6BE14224FCFD90018007A /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6BE13224FCFD90018007A /* LoginScreen.swift */; };
@@ -96,6 +97,8 @@
 		A389D6B92256858800D86567 /* RegistrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationManager.swift; sourceTree = "<group>"; };
 		A389D6BD2256ABBD00D86567 /* LoggedInUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedInUser.storyboard; sourceTree = "<group>"; };
 		A389D6BF2256AC6B00D86567 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		A3AD653622588F6D003FE2D8 /* NSMutableArray+LinkedInLoginFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+LinkedInLoginFile.h"; sourceTree = "<group>"; };
+		A3AD65392258910C003FE2D8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A3B0CA8022576AD900C1BD81 /* LinkedinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedinManager.swift; sourceTree = "<group>"; };
 		A3C6BDD6224F458B0018007A /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
 		A3C6BE13224FCFD90018007A /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 		A3095264224E36260001C48A = {
 			isa = PBXGroup;
 			children = (
+				A3AD65392258910C003FE2D8 /* Default-568h@2x.png */,
 				A309526F224E36260001C48A /* MentorzLoginSignUpFlow */,
 				A309526E224E36260001C48A /* Products */,
 				EA5F20DB191A2D397683518A /* Pods */,
@@ -156,6 +160,7 @@
 				A37A4DB5225611C000776258 /* MentorzLoginSignUpFlow-Bridging-Header.h */,
 				A3B0CA8022576AD900C1BD81 /* LinkedinManager.swift */,
 				A37A4DB922561DD900776258 /* FBManager.swift */,
+				A3AD653622588F6D003FE2D8 /* NSMutableArray+LinkedInLoginFile.h */,
 			);
 			path = MentorzLoginSignUpFlow;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 			files = (
 				A33F0ADC2254BD53006ABEAE /* countries.xml in Resources */,
 				A309527B224E36280001C48A /* LaunchScreen.storyboard in Resources */,
+				A3AD653A2258910C003FE2D8 /* Default-568h@2x.png in Resources */,
 				A30E0F642253A0E100BD8440 /* GoogleService-Info.plist in Resources */,
 				A37A4DAC2255DCE300776258 /* SignUp.storyboard in Resources */,
 				A33F0AD722549EF5006ABEAE /* onBoardVideo.gif in Resources */,

@@ -16,9 +16,23 @@ class LinkedinManager: UIViewController {
             clientId: "77tn2ar7gq6lgv",
             clientSecret: "iqkDGYpWdhf7WKzA",
             state: "DLKDJF45DIWOERCM",
-            permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: <#T##String!#>
-        ),nativeAppChecker: WebLoginOnly()
+            permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: "LKSFJLKSAKD"
+        ), nativeAppChecker: WebLoginOnly()
     )
+    
+    func LinkedinLogin()
+    {
+        linkedinHelper.authorizeSuccess({ (lsToken) -> Void in
+            //Login success lsToken
+            print("Login sucess")
+        }, error: { (error) -> Void in
+            print("Login error")
+            //Encounter error: error.localizedDescription
+        }, cancel: { () -> Void in
+            //User Cancelled!
+            print("Login cancel")
+        })
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

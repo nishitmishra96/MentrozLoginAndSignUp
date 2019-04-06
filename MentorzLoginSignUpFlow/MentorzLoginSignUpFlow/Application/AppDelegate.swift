@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if LinkedinSwiftHelper.shouldHandle(url) {
             return LinkedinSwiftHelper.application(app, open: url, sourceApplication: nil, annotation: nil)
         }
+        
         return handled;
     }
 

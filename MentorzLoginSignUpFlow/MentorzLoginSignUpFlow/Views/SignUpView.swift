@@ -58,7 +58,7 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     func didSelectCountryCode(country: Country) {
         self.countryCode.setTitle(country.code, for: .normal)
         self.phoneNumber.cc = country.code
-        self.phoneNumber.isoAlpha2Cc = ""
+        self.phoneNumber.isoAlpha2Cc = country.isoAlpha2Cc
     }
     override func viewDidLoad() {
         super.viewDidLoad()

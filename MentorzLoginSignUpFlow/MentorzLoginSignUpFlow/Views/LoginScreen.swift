@@ -13,6 +13,8 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     var countryCodetextField : String = ""
     private var userCredentialController : UserCredentialController = UserCredentialController(isLogin: true)
+    
+    var linkedInManager = LinkedinManager()
 //    let linkedinHelper = LinkedinSwiftHelper(configuration:
 //        LinkedinSwiftConfiguration(
 //            clientId: "77tn2ar7gq6lgv",
@@ -87,6 +89,9 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
 //        }, cancel: { () -> Void in
 //            //User Cancelled!
 //        })
+
+        linkedInManager.LinkedinLogin()
+        
     }
     
     func didSelectCountryCode(country: Country) {
