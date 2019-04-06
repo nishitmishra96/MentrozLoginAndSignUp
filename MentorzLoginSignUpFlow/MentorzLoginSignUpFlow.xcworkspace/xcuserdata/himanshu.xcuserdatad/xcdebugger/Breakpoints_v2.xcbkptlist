@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MentorzLoginSignUpFlow/Views/LoginScreen.swift"
-            timestampString = "576237975.868798"
+            timestampString = "576239201.221763"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -48,22 +48,6 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "PhoneNumberLogin(dataObject:handler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MentorzLoginSignUpFlow/Views/PutOtp.swift"
-            timestampString = "576237281.530604"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "verifyButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,7 +90,7 @@
                   moduleName = "MentorzLoginSignUpFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentrozLoginAndSignUp/MentorzLoginSignUpFlow/MentorzLoginSignUpFlow/Controller/UserDataController.swift"
-                  timestampString = "576237976.160705"
+                  timestampString = "576239201.511708"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "74"
@@ -121,7 +105,7 @@
                   moduleName = "MentorzLoginSignUpFlow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/himanshu/Desktop/MentrozLoginAndSignUp/MentorzLoginSignUpFlow/MentorzLoginSignUpFlow/Controller/UserDataController.swift"
-                  timestampString = "576237976.163957"
+                  timestampString = "576239201.514933"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "75"

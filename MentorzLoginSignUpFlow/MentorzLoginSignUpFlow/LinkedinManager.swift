@@ -10,13 +10,17 @@ import UIKit
 import LinkedinSwift
 
 class LinkedinManager: UIViewController {
+//    applicationWithRedirectURL:@"https://com.mentorz.linkedin.oauth/oauth"
+//    clientId:@"75k3gdbsqbrx1i"
+//    clientSecret:@"sXfZjmjDOLIu6M8l"
+
     
     let linkedinHelper = LinkedinSwiftHelper(configuration:
         LinkedinSwiftConfiguration(
-            clientId: "77tn2ar7gq6lgv",
-            clientSecret: "iqkDGYpWdhf7WKzA",
-            state: "DLKDJF45DIWOERCM",
-            permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: "LKSFJLKSAKD"
+            clientId:"75k3gdbsqbrx1i",
+            clientSecret:"sXfZjmjDOLIu6M8l",
+            state: "ARANDOMSTRING",
+            permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: "https://com.mentorz.linkedin.oauth/oauth"
         ), nativeAppChecker: WebLoginOnly()
     )
     
@@ -24,9 +28,9 @@ class LinkedinManager: UIViewController {
     {
         linkedinHelper.authorizeSuccess({ (lsToken) -> Void in
             //Login success lsToken
-            print("Login sucess")
+            print(lsToken)
         }, error: { (error) -> Void in
-            print("Login error")
+            print(error)
             //Encounter error: error.localizedDescription
         }, cancel: { () -> Void in
             //User Cancelled!
