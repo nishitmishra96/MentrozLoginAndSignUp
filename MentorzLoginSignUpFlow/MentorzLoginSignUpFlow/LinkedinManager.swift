@@ -1,5 +1,5 @@
 //
-//  LinkedinLogin.swift
+//  LinkedinManager.swift
 //  MentorzLoginSignUpFlow
 //
 //  Created by Nishit on 05/04/19.
@@ -7,9 +7,19 @@
 //
 
 import UIKit
+import LinkedinSwift
 
-class LinkedinLogin: UIViewController {
-
+class LinkedinManager: UIViewController {
+    
+    let linkedinHelper = LinkedinSwiftHelper(configuration:
+        LinkedinSwiftConfiguration(
+            clientId: "77tn2ar7gq6lgv",
+            clientSecret: "iqkDGYpWdhf7WKzA",
+            state: "DLKDJF45DIWOERCM",
+            permissions: ["r_basicprofile", "r_emailaddress"], redirectUrl: <#T##String!#>
+        ),nativeAppChecker: WebLoginOnly()
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

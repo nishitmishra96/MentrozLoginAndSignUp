@@ -30,6 +30,17 @@ class SignUpOptionsViewController: UIViewController {
         self.navigationController?.pushViewController(signUpView, animated: true)
     }
     
+    @IBAction func FacebookButtonPressed(_ sender: Any) {
+FBManager.init().login(onViewController: self) { (userprofile, error) -> (Void) in
+            if let fbuser = userprofile {
+                print(fbuser.id)
+            }else{
+                print("errrorrrrrr",error)
+            }
+        }
+    }
+    @IBAction func LinkedinButtonPressed(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

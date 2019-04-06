@@ -100,7 +100,6 @@ class UserCredentialController: NSObject {
                 loginManager.SocialLogin(dataObject: request) { (statusCode, loginResponse) -> (Void) in
                     if let response = loginResponse{
                         let newuser = User(userData: response)
-                        UserManager.shared.user = newuser
                         handler(statusCode,newuser)
                     }
                     else{

@@ -21,7 +21,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>li{Your LinkedIn app ID}</string>
+				<string>li4749661</string>
 			</array>
 		</dict>
 		<dict>
@@ -30,6 +30,14 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.googleusercontent.apps.727358980462-3ssgepmlmrdsfrtg84p58dqg62u17o9q</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1730350050528117</string>
 			</array>
 		</dict>
 	</array>
@@ -42,7 +50,7 @@
 	<key>FirebaseScreenReportingEnabled</key>
 	<true/>
 	<key>LIAppId</key>
-	<string>{Your LinkedIn app ID}</string>
+	<string>4749661</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

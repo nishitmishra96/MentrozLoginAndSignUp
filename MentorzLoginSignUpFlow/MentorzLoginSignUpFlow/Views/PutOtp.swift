@@ -45,6 +45,9 @@ class OTPScreen: UIViewController {
             }
         })
     }
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     @IBAction func textEditDidBegin(_ sender: UITextField) {
         print("textEditDidBegin has been pressed")
         

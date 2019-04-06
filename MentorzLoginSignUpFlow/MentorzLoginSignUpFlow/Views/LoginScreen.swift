@@ -57,10 +57,15 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
                 let homeScreen = UIStoryboard.init(name: "LoggedInUser", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
                 self.navigationController?.pushViewController(homeScreen, animated: true)
             }
-            else
+            else if (statusCode == 404)
+            {
+                SVProgressHUD.showError(withStatus: "User Doesnot Exists")
+            }
+            else if (statusCode == 401)
             {
                 SVProgressHUD.showError(withStatus: "Wrong Credentials")
             }
+            
         }
         }
     }
