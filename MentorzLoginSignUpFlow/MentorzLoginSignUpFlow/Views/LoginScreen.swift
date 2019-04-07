@@ -39,13 +39,16 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
         SVProgressHUD.show()
         if(/self.number.text?.count > 10)
         {
+            SVProgressHUD.dismiss()
             SVProgressHUD.showError(withStatus: "Number must be of atleast 10 digits")
         }
-        else if(/countryCode.titleLabel?.text!.count == 0){
+        else if(/countryCode.titleLabel?.text! == "+1"){
+            SVProgressHUD.dismiss()
             SVProgressHUD.showError(withStatus: "Please Select Country Code")
         }
         else if(/self.password.text?.count < 6)
         {
+            SVProgressHUD.dismiss()
             SVProgressHUD.showError(withStatus: "Minimum Password Length is 6")
         }
         else{
@@ -82,15 +85,18 @@ class LoginScreen: UIViewController,CountryCodeDelegate{
     }
     
     @IBAction func LinkedinButtonPressed(_ sender: Any) {
-//        linkedinHelper.authorizeSuccess({ (lsToken) -> Void in
-//            //Login success lsToken
-//        }, error: { (error) -> Void in
-//            //Encounter error: error.localizedDescription
-//        }, cancel: { () -> Void in
-//            //User Cancelled!
-//        })
 
-        linkedInManager.LinkedinLogin()
+        linkedInManager.LinkedinLogin { (loggedIn, error) -> (Void) in
+            if loggedIn{
+                let homeScreen = UIStoryboard.init(name: "LoggedInUser", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeScreen") as! HomeScreen
+                homeScreen.linkedInManager = self.linkedInManager;                self.navigationController?.pushViewController(homeScreen, animated: true)
+            }
+            else if error != nil{
+                
+                SVProgressHUD.show(withStatus: "Try Again")
+            }
+
+        }
         
     }
     

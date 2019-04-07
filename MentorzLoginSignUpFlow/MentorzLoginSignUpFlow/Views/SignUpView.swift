@@ -20,6 +20,22 @@ class SignUpView: UIViewController,CountryCodeDelegate {
     private var phoneNumber = PhoneNumber(cc: "91", isoAlpha2Cc: "in", number: "")
     
     @IBAction func SignUpButtonPressed(_ sender: Any) {
+        SVProgressHUD.show()
+        if(/self.nameTextField.text?.count == 0)
+        {
+            SVProgressHUD.dismiss()
+            SVProgressHUD.showError(withStatus: "Name Text Field cannot be empty")
+        }
+        else if(/countryCode.titleLabel?.text! == "+1"){
+            SVProgressHUD.dismiss()
+            SVProgressHUD.showError(withStatus: "Please Select Country Code")
+        }
+        else if(/self.passwordTextField.text?.count < 6)
+        {
+            SVProgressHUD.dismiss()
+            SVProgressHUD.showError(withStatus: "Minimum Password Length is 6")
+        }
+        else{
         phoneNumber.number = phoneNumberTextField.text
         userCredentialController.phonenumber = self.phoneNumber
         
@@ -32,6 +48,7 @@ class SignUpView: UIViewController,CountryCodeDelegate {
                 OTPClass.userCredentialController = self.userCredentialController
                 self.navigationController?.pushViewController(OTPClass, animated: true)
             }
+        }
         }
     }
     @IBAction func ccButtonPressed(_ sender: Any) {

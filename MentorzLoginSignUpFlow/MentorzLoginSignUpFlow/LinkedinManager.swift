@@ -24,17 +24,20 @@ class LinkedinManager: UIViewController {
         ), nativeAppChecker: WebLoginOnly()
     )
     
-    func LinkedinLogin()
+    func LinkedinLogin(handler: @escaping ((Bool,String)->(Void)))
     {
         linkedinHelper.authorizeSuccess({ (lsToken) -> Void in
             //Login success lsToken
             print(lsToken)
+            handler(true,"")
         }, error: { (error) -> Void in
             print(error)
+            handler(false,error as! String)
             //Encounter error: error.localizedDescription
         }, cancel: { () -> Void in
             //User Cancelled!
             print("Login cancel")
+            handler(false,"")
         })
     }
     

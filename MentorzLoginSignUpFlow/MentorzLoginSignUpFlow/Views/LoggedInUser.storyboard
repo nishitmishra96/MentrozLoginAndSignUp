@@ -38,15 +38,28 @@
                                     <action selector="BackButtonPressed:" destination="tFh-yp-EF5" eventType="touchUpInside" id="Sl6-Tj-Jg7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdI-ZL-nHE" customClass="LoginSignUpButtonStyle" customModule="MentorzLoginSignUpFlow" customModuleProvider="target">
+                                <rect key="frame" x="71" y="555.5" width="233" height="30"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Click to logout from linkedin Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="LogoutFromLinkedin:" destination="tFh-yp-EF5" eventType="touchUpInside" id="fqf-1G-WCp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="onr-Tq-ge9" firstAttribute="trailing" secondItem="ZdI-ZL-nHE" secondAttribute="trailing" constant="71" id="0uj-XD-mfn"/>
                             <constraint firstItem="onr-Tq-ge9" firstAttribute="trailing" secondItem="FKJ-GF-xE4" secondAttribute="trailing" constant="100" id="3kb-LB-f4J"/>
                             <constraint firstItem="FKJ-GF-xE4" firstAttribute="leading" secondItem="onr-Tq-ge9" secondAttribute="leading" constant="100" id="DO3-Ib-rLg"/>
                             <constraint firstItem="oV2-H5-PQF" firstAttribute="centerY" secondItem="9ar-n6-Zz8" secondAttribute="centerY" id="EDw-To-gK9"/>
                             <constraint firstItem="onr-Tq-ge9" firstAttribute="trailing" secondItem="oV2-H5-PQF" secondAttribute="trailing" constant="16" id="G48-BN-8me"/>
+                            <constraint firstItem="ZdI-ZL-nHE" firstAttribute="leading" secondItem="onr-Tq-ge9" secondAttribute="leading" constant="71" id="Sre-jw-bfp"/>
                             <constraint firstItem="FKJ-GF-xE4" firstAttribute="centerX" secondItem="9ar-n6-Zz8" secondAttribute="centerX" id="edx-uV-RRh"/>
                             <constraint firstItem="oV2-H5-PQF" firstAttribute="centerX" secondItem="9ar-n6-Zz8" secondAttribute="centerX" id="frQ-mg-TRh"/>
+                            <constraint firstItem="ZdI-ZL-nHE" firstAttribute="top" secondItem="FKJ-GF-xE4" secondAttribute="bottom" constant="48" id="gJF-Ep-Nkk"/>
                             <constraint firstItem="oV2-H5-PQF" firstAttribute="leading" secondItem="onr-Tq-ge9" secondAttribute="leading" constant="16" id="mNp-l5-q7L"/>
                             <constraint firstItem="FKJ-GF-xE4" firstAttribute="top" secondItem="oV2-H5-PQF" secondAttribute="bottom" constant="120" id="xEu-40-mK9"/>
                         </constraints>
